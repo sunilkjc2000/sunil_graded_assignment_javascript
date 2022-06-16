@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>
+            Typing speed check
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="heading">
+                Typing speed check
+              </div>
+              <div class="header">
+                <div class="wrd_per_min">
+                  <div class="header_text">WPM</div>
+                  <div class="curr_wrd_per_min">100</div>
+                </div>
+                <div class="char_per_min">
+                  <div class="header_text">CPM</div>
+                  <div class="curr_char_per_min">100</div>
+                </div>
+                <div class="errors">
+                  <div class="header_text">ERRORS</div>
+                  <div class="curr_errors">0</div>
+                </div>
+                <div class="timer">
+                  <div class="header_text">TIME</div>
+                  <div class="curr_time">60s</div>
+                </div>
+                <div class="accuracy">
+                  <div class="header_text">% ACCURACY</div>
+                  <div class="curr_accuracy">100</div>
+                </div>
+              </div>
+           
+              <div class="sample_text">
+                Click on the area below to start the game.
+              </div>
+              <textarea class="text_input_area"
+                placeholder="start typing here..."
+                oninput="processInputText()"
+                onfocus="startApp()">
+              </textarea>
+              <button class="reset_btn"
+                onclick="resetValues()">
+                Restart
+              </button>
+            </div>
+           
+            <!-- link the JavaScript file -->
+            <script src="speedCheck.js">
+            </script>
+          </body>
+          </html>
+    </body>
+
+</html>
